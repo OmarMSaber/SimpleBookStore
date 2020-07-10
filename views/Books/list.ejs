@@ -1,0 +1,12 @@
+<h1>List Books</h1>
+
+<table>
+<% Books_data.Items.forEach(function(Book){ %>
+    <tr>
+      <td>book title is <%= Book.title %></td>
+      <td>bookID is <%= Book.bookID %></td>
+      <td>author is <%= Book.author %></td>
+
+    </tr>
+<% }) %>
+</table>
