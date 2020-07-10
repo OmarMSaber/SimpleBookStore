@@ -8,5 +8,7 @@ fi
 
 yum remove -y httpd
 
-pm2 delete all
-pm2 start server.js
+# pm2 delete all
+# pm2 start index.js
+cd /tmp
+node index.js
