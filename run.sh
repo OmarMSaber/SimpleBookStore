@@ -1,7 +1,12 @@
-#!/usr/bin/env bash
-if [ ! -z "$DEPLOYMENT_GROUP_NAME" ]; then
- export NODE_ENV=$DEPLOYMENT_GROUP_NAME
+#!/bin/bash
+cd /tmp/
+
+isExistApp = `pgrep httpd`
+if [[ -n  $isExistApp ]]; then
+    service httpd stop
 fi
 
-cd ~/node
-pm2 start bin/www -n www -i 0
+yum remove -y httpd
+
+pm2 delete all
+pm2 start server.js
