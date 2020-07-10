@@ -5,10 +5,10 @@ files:
     destination: /tmp/
 hooks:
   AfterInstall:
-    - location: post_install
+    - location: scripts/post_install
       timeout: 100
       runas: root
   ApplicationStart:
-    - location: run
+    - location: scripts/run
       timeout: 100
       runas: root
