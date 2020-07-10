@@ -16,7 +16,4 @@ hooks:
     - location: scripts/run
       timeout: 100
       runas: root
-  ApplicationStop:
-    - location: scripts/stop
-      timeout: 100
-      runas: root
+      
