@@ -2,6 +2,3 @@
 cd /tmp/
 
 sudo yum install nodejs
-
-npm install -g pm2
-npm install
