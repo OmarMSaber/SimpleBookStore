@@ -2,5 +2,4 @@
 cd /tmp/
 
 
-pm2 delete all
-pm2 start index.js
+node app.js &
