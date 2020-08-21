@@ -17,6 +17,8 @@ The application uses some modules like:
 
 Simple API calls for the main CRUD (Create,Update,Read,Delete) operations are implemented and also APIs for simple queries and scans using the aws-sdk for calls
 
+# Architecture Diagram
+![alt text](https://user-images.githubusercontent.com/25318440/90884081-53077100-e3af-11ea-9d10-e1c59f06a6d5.png)
 
 WorFlow :
 
