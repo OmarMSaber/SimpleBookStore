@@ -2,11 +2,11 @@
 
 Simple BookStore App with nodejs express and AWS DynamoDb 
 
-Frontend
+### Frontend
 
 The Frontend is formed using ejs as view engine for the views , Simple views for Adding and Listing Books
 
-Backend
+### Backend
 
 The core of the backend application uses nodejs as the backend server , also using express as the nodejs framework Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications and also easy use of APIs.
 The application uses some modules like:
@@ -17,10 +17,10 @@ The application uses some modules like:
 
 Simple API calls for the main CRUD (Create,Update,Read,Delete) operations are implemented and also APIs for simple queries and scans using the aws-sdk for calls
 
-# Architecture Diagram
+## Architecture Diagram
 ![alt text](https://user-images.githubusercontent.com/25318440/90884081-53077100-e3af-11ea-9d10-e1c59f06a6d5.png)
 
-WorFlow :
+### WorFlow :
 
 - First the Dataset(.csv file for Books) is uploaded to AWS S3 bucket
 - DynamoDB table is created and the DatasetToDynamoDB.py script is then run to parse the .csv file and upload the records to DynamoDB
